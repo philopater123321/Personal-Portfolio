@@ -450,7 +450,112 @@ img{
     transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.2rem; }
+    
+    #name { font-size: 3rem; }
+    .job { font-size: 1.5rem; }
+    .about-me { font-size: 1.2rem; }
 
+    .sec1 { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+    .sec1-1 { 
+        float: none; 
+        left: 0; 
+        font-size: 28px; 
+        margin-bottom: 15px; 
+    }
+    .sec1-2 { 
+        float: none; 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+        padding-right: 0; 
+    }
+    .btn1, .btn2, .btn3, .btn4 { 
+        font-size: 1rem; 
+        padding: 8px 16px; 
+        margin-left: 0; 
+    }
+
+    #home { 
+        grid-template-columns: 1fr;
+        text-align: center; 
+        padding-top: 20px; 
+    }
+    .home-text { 
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    .sec2-1 { 
+        grid-column: 1; 
+        grid-row: 2; 
+        margin-top: 20px; 
+    }
+    .profile-img { 
+        grid-column: 1; 
+        grid-row: 3; 
+        float: none; 
+        width: 250px; 
+        height: 250px; 
+        margin: 30px auto; 
+        display: block; 
+    }
+    .sec2-1 button.btn1 { font-size: 24px !important; }
+
+    #about { 
+        flex-direction: column; 
+        margin-right: 0; 
+        padding: 20px; 
+    }
+    #h1-2 { float: none; text-align: center; width: 100%; }
+    #p-about { font-size: 1.2rem; text-align: center; }
+    
+    .info-sec { 
+        width: 100%;
+        padding: 20px; 
+        margin-top: 20px;
+    }
+    .age, .location, .school, .Email { flex-direction: column; text-align: center; align-items: center; }
+    .info-sec img { margin-top: 10px; }
+    .info-sec button { 
+        font-size: 1rem; 
+        white-space: normal; 
+        word-wrap: break-word; 
+        width: 100%; 
+    }
+
+    .skills-title h1 { font-size: 3rem !important; }
+    .skill-item { 
+        width: 280px; 
+        height: auto; 
+    }
+    
+    .project-section { 
+        flex-direction: column;
+        width: 100%;
+        align-items: center; 
+        gap: 30px; 
+    }
+    .project-item { 
+        width: 90%;
+        height: auto; 
+        padding: 20px; 
+    }
+    .project-item p { font-size: 1rem !important; }
+    .explore { 
+        margin-left: 0; 
+        width: 100%; 
+        font-size: 1.5rem; 
+    }
+}
 
 
 
