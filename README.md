@@ -28,3 +28,6 @@ shows my skills in a bar that moves to the right infinitely.
 ### Projects section:
 Shows my current projects.
 <img width="1888" height="851" alt="image" src="https://github.com/user-attachments/assets/ad891816-bf67-4748-820e-6c871b5e388c" />
+
+### Important Note:
+I didn't make too much commits because I still wasn't experienced enough to know this method in VS code and Github.
