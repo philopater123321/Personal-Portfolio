@@ -8,6 +8,7 @@ body {
     background-color: rgb(29, 32, 54);
     color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 h1{
     font-size: 4rem;
@@ -29,7 +30,7 @@ header{
 }
 header h1{
     color: white;
-    font-size: 1000;
+    font-size: 4rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 .sec1{
@@ -46,7 +47,6 @@ header h1{
     left: 5%;
     margin-top: 15px;
     margin: 0;
-
     color: aliceblue;
     font-size: 38px;
     font-weight:bold;
@@ -56,7 +56,7 @@ header h1{
 .sec1-1:hover{
     display: inline-block;
     transform: scale(1.05);
-    text-shadow: 0 0 15px rgb(rgb(112, 30, 148), rgb(65, 12, 78), rgb(212, 85, 235));
+    text-shadow: 0 0 15px rgb(112, 30, 148);
 }
 .sec1-2{
     display: flex;
@@ -86,7 +86,7 @@ header h1{
     transition: 0.3s ease;
 }
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
-    opacity: (0.9);
+    opacity: 0.9;
     transform: scale(1.05);
 }
 #home{
@@ -97,7 +97,6 @@ header h1{
     grid-template-columns:1fr auto;
     align-items: center;
     gap: 30px;
-
 }
 .home-text{
     grid-column: 1;
@@ -113,8 +112,7 @@ header h1{
     transition: 0.3s ease;
 }
 #name:hover{
-    text-shadow:  0px 0px 10px #712ec4;
-
+    text-shadow: 0px 0px 10px #712ec4;
     transform: scale(1.1);
 }
 .job{
@@ -161,7 +159,6 @@ img{
     transition: 0.4s ease;
     grid-column: 2;
     grid-row: 1 /span 2;
-
     align-items: right;
 }
 .profile-img:hover{
@@ -173,7 +170,12 @@ img{
     grid-row: 2;
 }
 #about{
+    display: flex;
     padding-top: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-right: 60px;
 }
 #h1-2{
     font-size: 45px;
@@ -182,7 +184,6 @@ img{
     color: white;
     transition: 0.3s;
     margin-bottom: 20px;
-
 }
 #p-about{
     text-align: left;
@@ -200,7 +201,7 @@ img{
     backdrop-filter: blur(10px);
     animation: floatingCard 4s ease-in-out infinite;
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 1px solid  rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     flex-direction: column;
     gap: 25px;
 }
@@ -220,7 +221,6 @@ img{
     gap: 18px ;
     float: none ;
     width: 100%;
-    
 }
 .age-text, .location-text, .school-text, .Email-text{
     display: flex;
@@ -241,22 +241,11 @@ img{
     transform: translateX(6px);
     text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
 }
-#about{
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin-right: 60px;
-}
 .info-sec img{
     width: 55px;
     height: 55px;
-    top: 15px;
     object-fit: contain;
     flex-shrink: 0;
-    position: relative;
-    margin-top: 80px;
     margin: 0;
     transition: transform 0.3s cubic-bezier(0.175, 0.855, 0.32, 1.275), filter 0.3s ease;
 }
@@ -273,7 +262,7 @@ img{
     cursor: pointer;
     text-align: left;
     font-size: 1.5rem;
-    transition: 0.2 ease;
+    transition: 0.2s ease;
     margin-bottom: 20px;
 }
 .info-sec button:hover{
@@ -293,9 +282,7 @@ img{
 }
 .skill-item{
     width: 480px;
-    height:560px;
-    object-fit: contain;
-    flex: 1;
+    height: 560px;
     background: rgba(15,23,42, 0.6);
     border: 1px solid rgba(168, 85, 247, 0.3);
     border-radius: 20px;
@@ -327,7 +314,6 @@ img{
     height: 100%;
     background: linear-gradient(90deg, #a855f7, #3b82f6);
 }
-
 .skill-name p{
     font-size: 1.5rem;
     color: #a855f7;
@@ -336,7 +322,6 @@ img{
     margin-top:4px;
     text-align: center;
 }
-
 .skill-item:hover{
     transform: translateY(-6px);
     border-color: rgba(168, 85, 247, 0.4);
@@ -356,11 +341,10 @@ img{
 }
 .skill{
     margin:0;
-    top: 0;
     width: 100%;
-    height: 100%;
-    object-position: center;
-    object-fit: contain;
+    height: 60%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
@@ -371,7 +355,7 @@ img{
     object-position: center;
     object-fit: contain;
     max-height: 100%;
-    min-width: 100%;
+    max-width: 100%;
     display: block;
 }
 @keyframes scrollRightMarquee{
@@ -394,8 +378,6 @@ img{
 .project-item{
     width: 625px;
     height: 750px;
-    object-fit: contain;
-    flex: 1;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
@@ -408,27 +390,25 @@ img{
     backdrop-filter: blur(10px);
     overflow: hidden;
 }
-
 .project{
     margin: 0;
-    top: 0;
-    object-fit: cover;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     border-radius: 15px;
     position: relative;
-    padding: 1px;
-
 }
 .project img{
     object-fit: cover;
-
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 .project-item:hover{
     transform: scale(1.02);
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4)
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
 }
 .explore{
     background: linear-gradient(90deg, #a855f7, #3b82f6);
@@ -442,8 +422,7 @@ img{
     text-align: center;
     justify-content: center;
     cursor: pointer;
-    margin-left:220px;
-    margin-top: 30px;
+    margin-top: 20px;
     transition: 0.3s ease;
 }
 .explore:hover{
@@ -451,13 +430,13 @@ img{
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 1.8rem; }
-    h3 { font-size: 1.2rem; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.1rem; }
     
-    #name { font-size: 3rem; }
-    .job { font-size: 1.5rem; }
-    .about-me { font-size: 1.2rem; }
+    #name { font-size: 2.8rem; }
+    .job { font-size: 1.4rem; }
+    .about-me { font-size: 1.1rem; }
 
     .sec1 { 
         display: flex; 
@@ -503,12 +482,12 @@ img{
         grid-column: 1; 
         grid-row: 3; 
         float: none; 
-        width: 250px; 
-        height: 250px; 
+        width: 220px; 
+        height: 220px; 
         margin: 30px auto; 
         display: block; 
     }
-    .sec2-1 button.btn1 { font-size: 24px; }
+    .sec2-1 button.btn1 { font-size: 22px !important; }
 
     #about { 
         flex-direction: column; 
@@ -516,7 +495,7 @@ img{
         padding: 20px; 
     }
     #h1-2 { float: none; text-align: center; width: 100%; }
-    #p-about { font-size: 1.2rem; text-align: center; }
+    #p-about { font-size: 1.1rem; text-align: center; }
     
     .info-sec { 
         width: 100%;
@@ -525,23 +504,26 @@ img{
     }
     .age, .location, .school, .Email { flex-direction: column; text-align: center; align-items: center; }
     .info-sec img { margin-top: 10px; }
+    .info-sec h2 { font-size: 1.8rem; text-align: center; }
+    .info-sec h3 { font-size: 1.1rem; text-align: center; }
     .info-sec button { 
         font-size: 1rem; 
         white-space: normal; 
         word-wrap: break-word; 
         width: 100%; 
+        text-align: center;
     }
 
-    .skills-title h1 { font-size: 3rem ; }
+    .skills-title h1 { font-size: 2.8rem !important; }
     
-    /* SKILLS FIX */
     .skill-item { 
-        width: 250px; 
-        min-width: 250px;
-        padding: 20px 10px;
+        width: 260px; 
+        min-width: 260px; 
+        height: 340px;    
+        padding: 20px 15px;
     }
     .skill {
-        height: 150px; 
+        height: 140px; 
     }
     .skill img {
         min-width: 0;  
@@ -557,12 +539,12 @@ img{
         gap: 30px; 
     }
     .project-item { 
-        width: 95%;
+        width: 100%;
         height: auto; 
         padding: 20px; 
     }
     .project {
-        height: 220px; 
+        height: 200px; 
         width: 100%;
     }
     .project img {
@@ -570,13 +552,11 @@ img{
         height: 100%;
         object-fit: cover;
     }
-    .project-item p { font-size: 1rem; }
+    .project-item p { font-size: 1rem !important; }
     .explore { 
         margin-left: 0; 
         width: 100%; 
-        font-size: 1.5rem; 
-        margin-top: 20px;
+        font-size: 1.3rem; 
+        margin-top: 15px;
     }
 }
-
-
